@@ -10,6 +10,18 @@
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
     <script src="index.js"></script>
     <title>Fawaz Totonchy</title>
+
+    <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "@splinetool/runtime": "https://unpkg.com/@splinetool/runtime@0.9.214/build/runtime.js"
+        }
+      }
+    </script>
+    <script type="module" src="app.js"></script>
+
+   
     <script type="text/javascript"
     src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
 </script>
@@ -95,7 +107,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
                     </a>
                 </div>
             </div>
+
         </header>
+        <canvas id="canvas3d"></canvas>
+
         <a href="#">
         <button class="mail__btn click" onclick="toggleModal()">
             <i class="fas fa-envelope"></i>
